@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#EC4849</color>
+    <color name="colorPrimarylight">#EC4849</color>
+    <color name="colorPrimaryDark">#EC4849</color>
+    <color name="colorAccent">#EC4849</color>
+    <color name="colorAccentt">#F1A978</color>
+    <color name="colorGreen">#78ca28</color>
+    <color name="selected_product_count">#4d4d4d</color>
+    <color name="list_product_name">#121212</color>
+    <color name="list_products_price">#4d4d4d</color>
+    <color name="gradient_2">#3e3e3e</color>
+    <color name="bg_separator">#DA707070</color>
+    <color name="border_remove_item">#fc9898</color>
+    <color name="btn_remove_item">#fc2222</color>
+    <color name="red_dull">#FC5A5A</color>
+    <color name="bg_input_form">#78ca28</color>
+    <color name="bg_input">#9BDF5C</color>
+    <color name="hint_label">#4E4E4E</color>
+    <color name="grey">#5b5b5b</color>
+    <color name="lbl_secondary">#8d8d8d</color>
+    <color name="primaryTextColor">#FFFCFC</color>
+
+    <array name="array_dot_active">
+        <item>@color/primaryTextColor</item>
+        <item>@color/primaryTextColor</item>
+        <item>@color/primaryTextColor</item>
+        <item>@color/primaryTextColor</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@android:color/darker_gray</item>
+        <item>@android:color/darker_gray</item>
+        <item>@android:color/darker_gray</item>
+        <item>@android:color/darker_gray</item>
+    </array>
+
+    <color name="white">#ffffff</color>
+    <color name="off_white">#F1F1F1</color>
+    <color name="black_off">#FF000000</color>
+    <color name="off_gray">#DEDEDE</color>
+    <color name="windowBackground">#1C1C1C</color>
+    <color name="overlay">#AA1C1C1C</color>
+    <color name="divider">#333333</color>
+    <color name="light_gray">#DFDFDF</color>
+    <color name="search_back">#DFDFDF</color>
+    <color name="productback">#f9f8f8</color>
+    <color name="demo_dark_transparent">#24000000</color>
+    <color name="status_bar_color">#FFFFFF</color>
+    <color name="dark_bg">#2D324F</color>
+    <color name="red">#ff3647</color>
+    <color name="black">#1E1E1E</color>
+    <color name="gray">#969696</color>
+    <color name="editback">#f1f1f1</color>
+    <color name="editketext">#383838</color>
+    <color name="green">#22cb4a</color>
+    <color name="lightgray">#D3D3D3</color>
+
+    <color name="chat_out">#c4ccf8</color>
+    <color name="chat_in">#e0e3e6</color>
+    <color name="dark_blue">#5200D8</color>
+    <color name="dark_red">#811700</color>
+
+    <color name="reds">#FF2D00</color>
+    <color name="yellow">#CDC000</color>
+
+    <color name="grey_40">#999999</color>
+    <color name="grey_60">#666666</color>
+    <color name="grey_80">#37474F</color>
+    <color name="grey_90">#263238</color>
+
+    <color name="black_overlay">#66000000</color>
+</resources>

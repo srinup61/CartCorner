@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="8dp"
+    app:cardUseCompatPadding="true">
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CODE: GET100"
+            android:textColor="@color/colorWarning"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:id="@+id/offerCode"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GET 5% Cashback up t0 100"
+            android:id="@+id/offerName"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="500"
+            android:text="offer valid only for minimum order amount of 300"
+            android:id="@+id/offerNote"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Valid Upto: 25-07-2020"
+            android:gravity="right"
+            android:textColor="@color/colorInfo"
+            android:id="@+id/offervalidupto"/>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

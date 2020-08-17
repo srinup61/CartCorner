@@ -1,0 +1,55 @@
+<androidx.core.widget.NestedScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <EditText
+            android:hint="Enter Address Nickname"
+            android:id="@+id/addressnicknameedital"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColorHint="@color/list_products_price"
+            android:textColor="@color/list_products_price"/>
+        <EditText
+            android:textColorHint="@color/list_products_price"
+            android:textColor="@color/list_products_price"
+            android:hint="Enter Person Name"
+            android:id="@+id/addresspersonnameedital"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"/>
+        <EditText
+            android:textColorHint="@color/list_products_price"
+            android:textColor="@color/list_products_price"
+            android:hint="Enter Address with commas"
+            android:inputType="text"
+            android:id="@+id/addressedital"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"/>
+
+        <Button
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/saveAddressal"
+            android:text="Save Address"
+            style="@style/button_style"/>
+        <Button
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cancelAddressal"
+            android:text="Cancel"
+            style="@style/button_style"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

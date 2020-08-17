@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.CheckoutActivity">
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/checkout_layout"
+        android:visibility="visible"
+        android:fillViewport="true"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Deliver To :"
+                    android:drawablePadding="20dp"
+                    android:drawableLeft="@drawable/map"
+                    android:textSize="18sp"/>
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/deliveryto_checkout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="18sp"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/deliveryaddress_checkout"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text=""/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/button_style"
+                android:id="@+id/changeaddress_checkout"
+                android:text="Change Delivery location"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="Delivery Options"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Please choose Date and Time slots before you getting Order History"/>
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:layout_marginTop="10dp"
+                android:spinnerMode="dialog"
+                android:background="@drawable/spinner_bg"
+                android:id="@+id/choosedate_checkout"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+            </androidx.appcompat.widget.AppCompatSpinner>
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:spinnerMode="dialog"
+                android:entries="@array/times_slot"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/spinner_bg"
+                android:id="@+id/choosetime_checkout"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+            </androidx.appcompat.widget.AppCompatSpinner>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/walletlayout"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Use Wallet Amount"
+                    android:id="@+id/addwalletamount"/>
+                <TextView
+                    android:id="@+id/showwallet"
+                    android:drawableLeft="@drawable/rupee"
+                    android:layout_weight="2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="20"
+                    android:textColor="@color/green"/>
+            </LinearLayout>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorWarning"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Apply Your Promo Code here"/>
+            <LinearLayout
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/checkpromoCode"
+                    android:inputType="textCapCharacters"
+                    android:hint="Enter Your PromoCode"/>
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="2dp"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_weight="3"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/submitPromocode"
+                    android:text="Apply"
+                    android:textAllCaps="false"
+                    android:background="@color/colorInfo"
+                    android:textColor="@color/colorWhite"/>
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:visibility="gone"
+                android:id="@+id/offersuccesslayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/offerSuccessMessage"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Offer Applied Successfully "
+                    android:textAllCaps="false"
+                    android:textColor="@color/green"/>
+            </LinearLayout>
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/offerfailedlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_weight="3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Offer Not Valid: "
+                    android:textAllCaps="false"
+                    android:textColor="@color/red"/>
+                <TextView
+                    android:id="@+id/offerfailMessage"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="You Have to purchase minimum 400"
+                    android:drawableLeft="@drawable/rupee"
+                    android:textAllCaps="false" />
+            </LinearLayout>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Note : Choose preference to add this cart into Weekly Cart or Monthly Cart for better shopping in future"/>
+            <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/imageView"
+                android:layout_marginTop="10dp"
+                android:weightSum="1"
+                android:id="@+id/cartradiogroup"
+                android:orientation="horizontal"
+                android:layout_alignLeft="@+id/textView2"
+                android:layout_alignStart="@+id/textView2"
+                android:layout_alignRight="@+id/textView3"
+                android:layout_alignEnd="@+id/textView3">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text="Weekly Cart"
+                    android:textColor="@color/colorPrimarylight"
+                    android:id="@+id/week"
+                    android:layout_gravity="center_horizontal"
+                    android:checked="false"
+                    android:textSize="20dp" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text="Monthly Cart"
+                    android:textColor="@color/colorPrimarylight"
+                    android:id="@+id/month"
+                    android:layout_gravity="center_horizontal"
+                    android:checked="false"
+                    android:textSize="20dp" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:padding="15dp"
+                android:visibility="gone"
+                android:layout_margin="15dp"
+                android:orientation="vertical"
+                android:id="@+id/ordersummury"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Order Summary"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:layout_gravity="center_horizontal"/>
+                <LinearLayout
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:text="Order Items"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_weight="2"
+                        android:id="@+id/orderTotalnoofitems"
+                        android:textStyle="bold"
+                        android:text="5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:text="Delivery Date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_weight="2"
+                        android:id="@+id/orderDeliveryDate"
+                        android:textStyle="bold"
+                        android:text=""
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:text="Delivery Time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_weight="2"
+                        android:id="@+id/orderDeliveryTime"
+                        android:textStyle="bold"
+                        android:text="9AM-1PM"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:text="Order Cost"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_weight="2"
+                        android:id="@+id/orderCost"
+                        android:textStyle="bold"
+                        android:text="1245"
+                        android:drawableLeft="@drawable/rupee"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:text="Your Saving Cost"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_weight="2"
+                        android:id="@+id/ordersavingCost"
+                        android:textStyle="bold"
+                        android:text="124"
+                        android:drawableLeft="@drawable/rupee"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:text="Delivery Charges"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_weight="2"
+                        android:id="@+id/orderDeliveryCharges"
+                        android:textStyle="bold"
+                        android:text="0"
+                        android:drawableLeft="@drawable/rupee"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <View
+                    android:layout_marginTop="10dp"
+                    android:background="#B7B7B7"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"/>
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:text="Total Payable Amount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_weight="2"
+                        android:id="@+id/orderDeliverypayamount"
+                        android:textStyle="bold"
+                        android:text="125"
+                        android:drawableLeft="@drawable/rupee"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+<LinearLayout
+    android:layout_marginTop="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:entries="@array/paymenymode"
+        android:spinnerMode="dialog"
+        android:background="@drawable/spinner_bg"
+        android:id="@+id/selectPaymenyMode"/>
+    <Button
+        android:layout_weight="1"
+        android:id="@+id/placeOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Place Order"
+        style="@style/button_style"
+        android:drawableRight="@drawable/ic_keyboard_arrow_right_black_24dp"/>
+</LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/checkoutsRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

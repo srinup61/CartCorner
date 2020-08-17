@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:background="@color/colorWhite"
+        android:id="@+id/addresseditlayout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_margin="10dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/ch_selectmanually"
+                    android:focusable="false"
+                    android:clickable="true"
+                    android:padding="10dp"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="You can select location manually"
+                    android:textColor="@color/colorAccent"
+                    android:drawableLeft="@drawable/ic_my_location_black_24dp"
+                    android:drawableTint="@color/colorAccent"
+                    android:drawablePadding="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/textback"/>
+                <EditText
+                    android:hint="Enter Address Nickname"
+                    android:id="@+id/ch_addressnicknameedit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/list_products_price"/>
+                <EditText
+                    android:hint="Enter Person Name"
+                    android:id="@+id/ch_addresspersonnameedit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textColorHint="@color/list_product_name"
+                    android:textColor="@color/list_products_price"/>
+                <EditText
+                    android:hint="Enter House No"
+                    android:id="@+id/ch_addresshousenoedit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/list_products_price"/>
+                <EditText
+                    android:hint="Enter Street Name"
+                    android:id="@+id/ch_addressstreetedit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/list_products_price"/>
+                <EditText
+                    android:hint="Enter City"
+                    android:id="@+id/ch_addresscityedit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/list_products_price"/>
+                <EditText
+                    android:hint="Enter Area"
+                    android:id="@+id/ch_addressareaedit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/list_products_price"/>
+                <EditText
+                    android:hint="Enter Appartment Name"
+                    android:id="@+id/ch_addressapartmentnameedit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/list_products_price"/>
+                <EditText
+                    android:hint="Enter LandMark"
+                    android:id="@+id/ch_addresslandmarkedit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/list_products_price"/>
+                <EditText
+                    android:hint="Enter Pincode"
+                    android:inputType="number"
+                    android:id="@+id/ch_addresspincodeedit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/list_products_price"/>
+                <CheckBox
+                    android:id="@+id/ch_default_type"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Click If you want to save as a default Address"/>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/ch_saveAddress"
+                        android:layout_weight="2"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAllCaps="false"
+                        android:text="Save Address"
+                        android:background="@color/colorAccent"
+                        android:textColor="@color/colorWhite"
+                        android:textStyle="bold"
+                        android:textSize="15sp"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"/>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+</LinearLayout>

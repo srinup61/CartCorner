@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    app:cardCornerRadius="5dp"
+    app:cardUseCompatPadding="true"
+    android:background="@color/colorWhite"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/singleorderId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="FROR52364"
+                android:textStyle="bold"
+                android:gravity="right"
+                android:layout_marginRight="5dp"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="6dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Deliverydate"
+                android:textStyle="bold"
+                android:textSize="15sp"/>
+            <TextView
+                android:text=":"
+                android:textStyle="bold"
+                android:layout_weight="3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_weight="2"
+                android:id="@+id/orderDeliveryDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="01-09-2019"
+                android:textStyle="bold"
+                android:textSize="15sp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="6dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Time Slot"
+                android:textStyle="bold"
+                android:textSize="15sp"/>
+            <TextView
+                android:text=":"
+                android:textStyle="bold"
+                android:layout_weight="3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_weight="2"
+                android:id="@+id/orderDeliveryTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="02:30 - 06:30"
+                android:textStyle="bold"
+                android:textSize="15sp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total Amount"
+                android:textStyle="bold"
+                android:textSize="15sp"/>
+            <TextView
+                android:text=":"
+                android:textStyle="bold"
+                android:layout_weight="3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_weight="2"
+                android:id="@+id/orderDeliverypayable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="5000"
+                android:drawableLeft="@drawable/rupee"
+                android:textStyle="bold"
+                android:textSize="15sp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="6dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Discount Amount"
+                android:textStyle="bold"
+                android:textSize="15sp"/>
+            <TextView
+                android:text=":"
+                android:textStyle="bold"
+                android:layout_weight="3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_weight="2"
+                android:id="@+id/orderDiscountamount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="200"
+                android:drawableLeft="@drawable/rupee"
+                android:textStyle="bold"
+                android:textSize="15sp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/vieworders"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View Items"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:padding="3dp"
+                android:textColor="@color/colorPrimary"
+                android:background="@drawable/textback"/>
+            <View
+                android:layout_width="50dp"
+                android:layout_height="match_parent"/>
+            <TextView
+                android:id="@+id/orderDeliverystatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Order Initilized"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="@color/colorPrimary"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

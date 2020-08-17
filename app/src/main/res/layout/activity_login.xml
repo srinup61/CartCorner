@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/root">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="0dp"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:scaleType="centerCrop"
+                android:id="@+id/main"
+                android:src="@drawable/bga" />
+
+            <ImageView
+                android:id="@+id/textView2"
+                android:layout_width="160dp"
+                android:layout_height="140dp"
+                android:layout_marginLeft="22dp"
+                android:src="@drawable/nwb"
+                android:textColor="#020202"
+                android:textSize="18sp" />
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/hh"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginRight="20dp"
+                android:layout_below="@id/main">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:id="@+id/ll"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="30dp"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Verify Your Number"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+                        android:textColor="@color/black_off"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:layout_width="280dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:text="Please enter your mobile number to receive a verification code"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                        android:textColor="@color/grey_60" />
+                    <RelativeLayout
+                        android:id="@+id/phoneAuth"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="0dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <EditText
+                                android:layout_weight="4"
+                                android:editable="false"
+                                android:id="@+id/countryCode"
+                                android:layout_width="match_parent"
+                                android:layout_height="70dp"
+                                android:text="+91"
+                                android:clickable="false"
+                                android:focusable="false"
+                                android:padding="12dp"
+                                android:textSize="16dp"
+                                android:fontFamily="@font/gotham" />
+                            <EditText
+                                android:layout_weight="1"
+                                android:id="@+id/phoneText"
+                                android:layout_width="match_parent"
+                                android:layout_height="70dp"
+                                android:hint="Enter Mobile No"
+                                android:inputType="phone"
+                                android:padding="12dp"
+                                android:textSize="16dp"
+                                android:maxLength="10"
+                                android:importantForAutofill="no"
+                                android:fontFamily="@font/gotham"
+                                android:singleLine="true" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <Button
+                        android:id="@+id/send_otp"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="40dp"
+                        android:fontFamily="@font/gotham"
+                        android:layout_marginTop="20dp"
+                        android:layout_below="@+id/hh"
+                        android:onClick="sendCode"
+                        android:background="@drawable/item_round"
+                        android:text="Send OTP"
+                        android:textAllCaps="false"
+                        android:textStyle="bold"
+                        android:textColor="#0E0D0D"
+                        android:textSize="15sp"
+                        tools:ignore="OnClick" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

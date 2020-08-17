@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    android:layout_marginTop="7dp"
+    android:layout_marginRight="4dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/item_round1"
+    android:elevation="800dp"
+    app:cardCornerRadius="10dp"
+    android:id="@+id/cardView"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:id="@+id/selectcat"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:id="@+id/single_subcat_image"
+            android:layout_width="match_parent"
+            android:scaleType="fitXY"
+            android:background="@color/demo_dark_transparent"
+            android:layout_height="match_parent"
+            android:src="@color/demo_dark_transparent" />
+
+        <TextView
+            android:id="@+id/single_subcat_name"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="Category Name"
+            android:textSize="13dp"
+            android:fontFamily="@font/gotham"
+            android:textColor="#020202"
+            android:paddingTop="4dp"
+            android:background="@drawable/bg"
+            android:gravity="center_horizontal"
+            android:layout_gravity="bottom"/>
+
+    </FrameLayout>
+
+</androidx.cardview.widget.CardView>

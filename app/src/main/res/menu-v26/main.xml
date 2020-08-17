@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_cart"
+        android:title="Cart"
+        android:icon="@drawable/ic_menu_cart"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/weekly_cart"
+        android:title="Week Cart"
+        android:icon="@drawable/ic_weeka"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/monthly_cart"
+        android:title="Monthly Cart"
+        android:icon="@drawable/ic_monthlya"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/offers"
+        android:iconTint="@color/white"
+        android:icon="@drawable/sale"
+        app:showAsAction="always"
+        android:title="Offers" />
+</menu>

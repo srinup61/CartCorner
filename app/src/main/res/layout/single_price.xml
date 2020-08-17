@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal">
+    <TextView
+        android:gravity="center"
+        android:layout_weight="3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="1 KG"
+        android:id="@+id/spproductWeight"/>
+    <TextView
+        android:gravity="center|left"
+        android:layout_weight="3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="100"
+        android:drawableLeft="@drawable/rupee"
+        android:id="@+id/spproductprice"/>
+    <TextView
+        android:gravity="center|left"
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="95"
+        android:drawableLeft="@drawable/rupee"
+        android:id="@+id/spproductdprice"/>
+
+</LinearLayout>

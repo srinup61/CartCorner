@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:fillViewport="true"
+    android:background="@color/primaryTextColor"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:id="@+id/vegetable"
+    android:orientation="vertical">
+    <ImageView
+        android:src="@drawable/add"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/singleprimage"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/singlepname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fruits"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:textSize="20sp"/>
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/singleprices"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_weight="3"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/spinner_bg"/>
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="3"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center"
+                android:text="Rs."
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/singlepdiscprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center"
+                android:text="56"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/calculation"
+            android:background="@drawable/addbuttonback"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:gravity="center"
+                android:id="@+id/singleDecrese"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/ic_remove_black_24dp" />
+            <TextView
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:id="@+id/singleQuantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="1"
+                android:gravity="center"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:gravity="center"
+                android:id="@+id/singleIncrease"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignBottom="@+id/quantity"
+                android:background="@drawable/ic_add_black_24dp"
+                android:clickable="true"
+                android:focusable="false" />
+        </LinearLayout>
+    </LinearLayout>
+<TextView
+    android:layout_marginTop="20dp"
+    android:layout_gravity="center"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="ABOUT"
+    android:textSize="20sp"
+    android:textStyle="bold"/>
+    <View
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#B7B7B7"/>
+<androidx.appcompat.widget.AppCompatTextView
+    android:layout_marginTop="20dp"
+    android:id="@+id/singleproductDescription"
+    android:layout_width="wrap_content"
+    android:justificationMode="inter_word"
+    android:layout_height="wrap_content"
+    android:text="Fresho is our brand of fresh fruits and vegetables which are individually handpicked everyday by our experienced and technically competent buyers. Our buying, storing and packaging processes are tailored to ensure that only the fresh, nutrient dense, healthy and delicious produce reaches your doorstep. We guarantee the quality of all Fresho products. If you're not satisfied with the freshness of the items, you can hand them back to our Customer Experience Executive (CEE) for a full refund. Royal gala apples are bright red, thin skinned, white fleshed fruits with a mild sweet flavour and are native to New Zealand. "/>
+<androidx.appcompat.widget.AppCompatButton
+    android:clickable="true"
+    android:textStyle="bold"
+    android:layout_marginTop="30dp"
+    android:layout_gravity="center"
+    android:id="@+id/singleaddtoCart"
+    style="@style/button_style"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    android:text="Add To cart"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+</LinearLayout>
+</androidx.core.widget.NestedScrollView>

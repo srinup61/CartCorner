@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.UpdateProfileActivity">
+    <androidx.core.widget.NestedScrollView
+        android:fillViewport="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:gravity="center"
+                android:layout_margin="10dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <FrameLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/profile_update_picture"
+                        android:layout_width="130dp"
+                        android:layout_height="130dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/profile" />
+                    <ImageView
+                        android:id="@+id/profile_update_editprofile"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="bottom|end"
+                        android:tint="@color/colorAccent"
+                        app:srcCompat="@drawable/ic_edit_black_24dp" />
+                </FrameLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/input_layout_updatefullname"
+                    style="@style/TextLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_margin"
+                    android:background="@drawable/bg_input_layout_form"
+                    app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/input_updatefullname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/activity_margin_half"
+                        android:background="@null"
+                        android:hint="Full Name"
+                        android:inputType="textPersonName"
+                        android:paddingLeft="@dimen/activity_margin_half"
+                        android:paddingRight="@dimen/activity_margin_half"
+                        android:textCursorDrawable="@null" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/input_layout_updateemail"
+                    style="@style/TextLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_margin"
+                    android:background="@drawable/bg_input_layout_form"
+                    app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/input_updateemail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/activity_margin_half"
+                        android:background="@null"
+                        android:hint="Email"
+                        android:inputType="textEmailAddress"
+                        android:paddingLeft="@dimen/activity_margin_half"
+                        android:paddingRight="@dimen/activity_margin_half"
+                        android:textCursorDrawable="@null" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/input_layout_updatemobile"
+                    style="@style/TextLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_margin"
+                    android:background="@drawable/bg_input_layout_form"
+                    app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/input_updatemobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/activity_margin_half"
+                        android:background="@null"
+                        android:hint="Mobile"
+                        android:inputType="phone"
+                        android:paddingLeft="@dimen/activity_margin_half"
+                        android:paddingRight="@dimen/activity_margin_half"
+                        android:textCursorDrawable="@null" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_weight="1"
+                        android:id="@+id/profile_cancel_update"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorAccent"
+                        android:text="Cancel"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/white" />
+                    <View
+                        android:layout_width="5dp"
+                        android:layout_height="match_parent"/>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_weight="1"
+                        android:id="@+id/profile_submit_update"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorAccent"
+                        android:text="Update"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/white" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

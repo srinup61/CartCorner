@@ -1,0 +1,141 @@
+<resources>
+    <string name="app_name">Cart Corner</string>
+    <string name="refresh">Refresh</string>
+    <string name="price_with_currency">₹%.2f</string>
+    <string name="price_with_currency_string">₹%s</string>
+    <string name="total_price_with_currency_string">Total: ₹%s</string>
+    <string name="lbl_view_cart">VIEW CART</string>
+
+    <string name="clear_cart">Clear Cart</string>
+    <string name="title_activity_transactions">Transactions</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="btn_checkout">CHECKOUT (%s)</string>
+    <string name="lbl_your_cart">Your Cart</string>
+    <string name="title_activity_paytm_activity">Order Status</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_mobile">Mobile</string>
+    <string name="hint_password">Password</string>
+    <string name="login">Login</string>
+    <string name="forgot">Forgot Password</string>
+    <string name="msg_enter_credentials">Enter email and username!</string>
+    <string name="logout">Logout</string>
+    <string name="hint_name">Fullname</string>
+    <string name="register">Register Now</string>
+    <string name="msg_fill_the_form">Please fill the form!</string>
+    <string name="lbl_create_account">Don\'t have an account? Sign Up here.</string>
+    <string name="lbl_existing_account">Already have an account? Login here</string>
+    <string name="msg_unknown">Unknown error occurred! Please try again. Check Android Studio\'s LogCat for detailed error report.</string>
+    <string name="error">Error</string>
+    <string name="msg_preparing_order">Preparing your order</string>
+    <string name="msg_fetching_checksum">Getting checksum value from the server</string>
+    <string name="msg_redirecting_to_paytm">Redirecting to PayTM gateway</string>
+    <string name="msg_verifying_status">Verifying transaction status on server</string>
+    <string name="msg_order_placed_successfully">Your order placed successfully!</string>
+    <string name="thank_you">THANK YOU</string>
+    <string name="btn_check_order">CHECK ORDERS</string>
+    <string name="title_preparing_order">Preparing Order</string>
+    <string name="msg_order_placed_failed">Order couldn\'t be placed. Plase contact support.</string>
+    <string name="order_failed">ORDER FAILED</string>
+    <string name="activity_title_orders">My Orders</string>
+    <string name="order_placed">Order Placed</string>
+    <string name="order_id">Order Id #%d</string>
+    <string name="transaction_failed">Transaction Failed</string>
+    <string name="transactions">NO DATA</string>
+
+    <string name="dialog_permission_title">Grant Permissions</string>
+    <string name="dialog_permission_message">This app needs permission to use this feature. You can grant them in app settings.</string>
+    <string name="go_to_settings">GOTO SETTINGS</string>
+
+
+    <string name="lbl_set_profile_photo">Set profile image</string>
+    <string name="lbl_take_camera_picture">Take a picture</string>
+    <string name="lbl_choose_from_gallery">Choose from gallery</string>
+    <string name="toast_image_intent_null">Image picker option is missing!</string>
+    <string name="google_apikey">AIzaSyC-yNXRZTkMBzAQ8A_gNfTzi1tTGRYitgM</string>
+    <!--<string name="google_apikey">AIzaSyBvRrAq2C0BbXamoAJdGUomjnxYQsken_w</string>-->
+    <!--<string name="google_apikey">AIzaSyC6js7VmtuOUwLpCYudvELIAtoP9Vf3iOs</string>-->
+    <string name="title_shop">Shop</string>
+    <string name="title_trip">Book a trip</string>
+    <string name="title_trips">Your trips</string>
+    <string name="title_profile">Profile</string>
+
+    <string name="title_activity_welcome">Home Screen</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+
+    <string name="slide_1_title">Hello Food!</string>
+    <string name="slide_1_desc">The easiest way to order food from your favourite restaurant!</string>
+
+    <string name="slide_2_title">Movie Tickets</string>
+    <string name="slide_2_desc">Book movie tickets for your family and friends!</string>
+
+    <string name="slide_3_title">Great Discounts</string>
+    <string name="slide_3_desc">Best discounts on every single service we offer!</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Categories</string>
+    <string name="menu_slideshow">My Profile</string>
+    <string name="menu_tools">My Orders</string>
+    <string name="menu_share">About Us</string>
+    <string name="menu_send">Contact Us</string>
+
+    <string-array name="times_slot">
+        <item>Choose TimeSlot</item>
+        <item>6AM - 9AM</item>
+        <item>9AM - 2PM</item>
+        <item>2PM - 7PM</item>
+    </string-array>
+    <string-array name="paymenymode">
+        <item>Choose Paymode</item>
+        <item>Pay On Delivery</item>
+        <item>Pay Now</item>
+    </string-array>
+
+    <string name="title_activity_login_choose">LoginChooseActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <string name="what">CART CORNER is online grocery store. With different range of products and multi brands in our catalogue you will find everything you are looking for. Right from fresh Fruits and Vegetables, Rice and Dals, Spices and Seasonings to Packaged products, Beverages, Personal care products.We have it all.\n\n
+
+Choose from a wide range of options in every category, exclusively handpicked to help you find the best quality available at the lowest prices. Select a time slot for delivery and your order will be delivered right to your doorstep, anywhere in VIJAYAWADA and ANANTAPUR. You can pay online using your debit / credit card,paytm.\n\n
+
+We guarantee on time delivery, and the best quality!</string>
+
+    <string name="why">
+        Freshcart allows you to walk away from the drudgery of grocery shopping and welcome an easy relaxed way of browsing and shopping for groceries. Discover new products and shop for all your food and grocery needs from the comfort of your home or office. No more getting stuck in traffic jams, paying for parking , standing in long queues and carrying heavy bags – get everything you need, when you need, right at your doorstep. Food shopping online is now easy as every product on your monthly shopping list, is now available online at Freshcart, India’s best online grocery store!
+    </string>
+    <string name="candec">Our focus is complete customer satisfaction. In the event, if you are displeased with the services provided, we will refund back the money, provided the reasons are genuine and proved after investigation. Please read the fine prints of each deal before buying it, it provides all the details about the services or the product you purchase.</string>
+    <string name="canfol">In case of dissatisfaction from our services, clients have the liberty to cancel their projects and request a refund from us. Our Policy for the cancellation and refund will be as follows:</string>
+    <string name="canpolicy">we reserve the right to refuse or cancel any order for any reason such as limitations on quantities available for purchase, inaccuracies or errors in product or pricing information, or problems identified by our credit and fraud avoidance department.\n
+        You as a customer at present cannot cancel your order so please be 100% sure before placing the order. We may bring the cancellation policy in later time.\n\n
+    For CANCELLATION of  your placed order you need to contact customer support no:  +91-7799154455 before 2hrs of  your preferred delivery slot.</string>
+    <string name="returnpolicy">Please check the goods on delivery and ensure that they are supplied correctly. Goods sold will not be taken back unless the product is damaged, expired, or faulty during delivery time. If any of the goods prove to be defect, please return the same at the time of delivery. The item needs to be in its original unused condition and packaging, with any labels intact, then we will issue a full refund for the price you paid for the item.</string>
+    <string name="refundpolicy">
+In case of returns being taken as per our returns policy, for cash on delivery, we will return the money for the returned goods at the time of delivery itself. In case of credit/debit card payments we will credit the money back to your credit/debit card or net banking which takes up to 8 to 10 working days to reflect in your statement. We will not be giving any cash refunds for purchase done using credit/debit card payments. Please contact customer support for further clarifications.</string>
+
+    <string name="ca">Cart Corner is a Proprietory firm. As a visitor to the Site/ Customer you are advised to please read the terms and conditions carefully.</string>
+    <string name="eligibility"><b>Eligibility:</b> Services of the Site would be available to only select geographies in Andhra Pradesh. Persons who are "incompetent to contract" within the meaning of the Indian Contract Act, 1872 including un-discharged insolvents etc. are not eligible to use the Site. If you are a minor i.e. under the age of 18 years but at least 13 years of age you may use the Site only under the supervision of a parent or legal guardian who agrees to be bound by these Terms of Use. If your age is below 18 years your parents or legal guardians can transact on behalf of you if they are registered users. You are prohibited from purchasing any material which is for adult consumption and the sale of which to minors is prohibited.</string>
+    <string name="obligations"><b>Obligations</b> : All shoppers have to register and login for placing orders on the Site. You have to keep your account and registration details current and correct for communications related to your purchases from the site</string>
+    <string name="pricing"><b>Pricing  :</b> All the products listed on the Site will be sold at MRP unless otherwise specified. The prices mentioned at the time of ordering will be the prices charged on the date of the delivery. Although prices of most of the products do not fluctuate on a daily basis but some of the commodities and fresh food prices do change on a daily basis.</string>
+    <string name="agreeandconfirm"><b>You Agree and Confirm:</b>\n\n
+That in the event that a non-delivery occurs on account of a mistake by you (i.e. wrong name or address or any other wrong information) any extra cost incurred by us for redelivery shall be claimed from you.\n\n
+You authorise Cart Corner to contact you for any transactional purposes related to your order/account.
+That you are accessing the services available on this Site and transacting at your sole risk and are using your best and prudent judgment before entering into any transaction through this Site.\n\n
+That the address at which delivery of the product ordered by you is to be made will be correct and proper in all respects.\n
+That before placing an order you will check the product description carefully. By placing an order for a product you agree to be bound by the conditions of sale included in the items description.</string>
+    <string name="productcolors"><b>Product and colours:</b>\n
+We have made every effort to display the colours of our products that appear on the Website as accurately as possible. However, as the actual colour of the product  you see will depend on your monitor, we cannot guarantee that your monitors display of any colour will be accurate..</string>
+    <string name="modificationtc"><b>Modifictaion  of terms and conditions:</b>\n
+Cart Corner may at any time modify the Terms &amp; Conditions of Use of the Website without any prior notification to you. You can access the latest version of these Terms &amp; Conditions at any given time on the Site. You should regularly review the Terms &amp; Conditions on the Site. In the event the modified Terms &amp; Conditions is not acceptable to you, you should discontinue using the Service. However, if you continue to use the Service you shall be deemed to have agreed to accept and abide by the modified Terms &amp; Conditions of Use of this Site.</string>
+
+</resources>
